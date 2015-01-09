@@ -14,6 +14,7 @@
 		04690FD51A5FD8C300181CDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04690FD41A5FD8C300181CDC /* Images.xcassets */; };
 		04690FD81A5FD8C300181CDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04690FD61A5FD8C300181CDC /* LaunchScreen.xib */; };
 		04690FE41A5FD8C300181CDC /* JSBindingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04690FE31A5FD8C300181CDC /* JSBindingTests.m */; };
+		04690FEF1A5FE24800181CDC /* Point3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 04690FEE1A5FE24800181CDC /* Point3D.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		04690FDD1A5FD8C300181CDC /* JSBindingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSBindingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04690FE21A5FD8C300181CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04690FE31A5FD8C300181CDC /* JSBindingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBindingTests.m; sourceTree = "<group>"; };
+		04690FED1A5FE24800181CDC /* Point3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point3D.h; sourceTree = "<group>"; };
+		04690FEE1A5FE24800181CDC /* Point3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point3D.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				04690FD41A5FD8C300181CDC /* Images.xcassets */,
 				04690FD61A5FD8C300181CDC /* LaunchScreen.xib */,
 				04690FC71A5FD8C300181CDC /* Supporting Files */,
+				04690FED1A5FE24800181CDC /* Point3D.h */,
+				04690FEE1A5FE24800181CDC /* Point3D.m */,
 			);
 			path = JSBinding;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04690FD01A5FD8C300181CDC /* ViewController.m in Sources */,
+				04690FEF1A5FE24800181CDC /* Point3D.m in Sources */,
 				04690FCD1A5FD8C300181CDC /* AppDelegate.m in Sources */,
 				04690FCA1A5FD8C300181CDC /* main.m in Sources */,
 			);
