@@ -8,12 +8,21 @@
 
 #import "ViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+#import "Point3D.h"
+#import "Console.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+void loadJS(JSContext *ctx,NSString *fileName,NSString *lastFileName){
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:lastFileName];
+    NSString *script = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    [ctx evaluateScript:script];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -59,6 +68,39 @@
         ctx[@"newGlobal=3"];
         return [str1 stringByAppendingString:str2];
     };
+    
+//    Console *console = [[Console alloc] initWithJSContext:context];
+    
+    
+    NSLog(@"**************************1**********************\n\n\n\n\n\n");
+    
+    Point3D *point3d = [[Point3D alloc] initWithContext:context];
+    point3d.x = 1;
+    point3d.y = 2;
+    point3d.z = 3;
+    
+    context[@"point3D"] = point3d;
+    NSString *script = @"point3D.x=2;point3D.y=3,point3D.z=4;point3D.length()";
+    
+    result = [context evaluateScript:script];
+    double sqrt = [result toDouble];
+    
+    context[@"foo"] = ^(){
+        return @"Hello OC,I'm from JS.";
+    };
+    
+    script = @"Console.log()";
+    [context evaluateScript:script];
+    NSLog(@"**********************2**************************\n\n\n\n\n\n");
+    loadJS(context, @"test", @"js");
+    
+    
+    
+    
+
+
+    
+    
     
 }
 

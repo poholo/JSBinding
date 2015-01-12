@@ -13,11 +13,12 @@
 -(id)initWithContext:(JSContext *)ctx{
     if (self = [super init]) {
         _ctx = ctx;
+        
     }
     return self;
 }
 
 -(double)length{
-    return <#expression#>
+    return sqrt(self.x*self.x+self.y*self.y+self.z*self.z);
 }
 @end

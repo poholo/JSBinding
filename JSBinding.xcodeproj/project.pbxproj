@@ -15,6 +15,8 @@
 		04690FD81A5FD8C300181CDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04690FD61A5FD8C300181CDC /* LaunchScreen.xib */; };
 		04690FE41A5FD8C300181CDC /* JSBindingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04690FE31A5FD8C300181CDC /* JSBindingTests.m */; };
 		04690FEF1A5FE24800181CDC /* Point3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 04690FEE1A5FE24800181CDC /* Point3D.m */; };
+		04690FF21A637C8500181CDC /* Console.m in Sources */ = {isa = PBXBuildFile; fileRef = 04690FF11A637C8500181CDC /* Console.m */; };
+		04690FF41A637E7000181CDC /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 04690FF31A637E7000181CDC /* test.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		04690FE31A5FD8C300181CDC /* JSBindingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBindingTests.m; sourceTree = "<group>"; };
 		04690FED1A5FE24800181CDC /* Point3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point3D.h; sourceTree = "<group>"; };
 		04690FEE1A5FE24800181CDC /* Point3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point3D.m; sourceTree = "<group>"; };
+		04690FF01A637C8500181CDC /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
+		04690FF11A637C8500181CDC /* Console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Console.m; sourceTree = "<group>"; };
+		04690FF31A637E7000181CDC /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,8 @@
 				04690FC71A5FD8C300181CDC /* Supporting Files */,
 				04690FED1A5FE24800181CDC /* Point3D.h */,
 				04690FEE1A5FE24800181CDC /* Point3D.m */,
+				04690FF01A637C8500181CDC /* Console.h */,
+				04690FF11A637C8500181CDC /* Console.m */,
 			);
 			path = JSBinding;
 			sourceTree = "<group>";
@@ -103,6 +110,7 @@
 			children = (
 				04690FC81A5FD8C300181CDC /* Info.plist */,
 				04690FC91A5FD8C300181CDC /* main.m */,
+				04690FF31A637E7000181CDC /* test.js */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 			files = (
 				04690FD31A5FD8C300181CDC /* Main.storyboard in Resources */,
 				04690FD81A5FD8C300181CDC /* LaunchScreen.xib in Resources */,
+				04690FF41A637E7000181CDC /* test.js in Resources */,
 				04690FD51A5FD8C300181CDC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04690FF21A637C8500181CDC /* Console.m in Sources */,
 				04690FD01A5FD8C300181CDC /* ViewController.m in Sources */,
 				04690FEF1A5FE24800181CDC /* Point3D.m in Sources */,
 				04690FCD1A5FD8C300181CDC /* AppDelegate.m in Sources */,
@@ -420,6 +430,7 @@
 				04690FE91A5FD8C300181CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04690FEA1A5FD8C300181CDC /* Build configuration list for PBXNativeTarget "JSBindingTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +439,7 @@
 				04690FEC1A5FD8C300181CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
